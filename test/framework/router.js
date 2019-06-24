@@ -66,7 +66,6 @@ describe('FrameworkRouter', function() {
         if (err) throw err;
 
         parseInt(res.headers['content-length'], 10).should.be.above(100);
-        res.text.should.eql('');
 
         done();
       });
